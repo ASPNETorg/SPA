@@ -147,9 +147,8 @@ namespace SPADesignPattern.ApplicationServices.Services
             {
                 return new Response<DeletePersonServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
             }
-            var person = new Person() { Id = dto.Id};
 
-            var deleteResponse = await _personRepository.Delete(person);
+            var deleteResponse = await _personRepository.Delete(dto.Id);
 
             if (deleteResponse is null || !deleteResponse.IsSuccessful)
             {

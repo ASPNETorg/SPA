@@ -105,22 +105,22 @@ namespace SPADesignPattern.Models.Services.Repositories
         #endregion
 
         #region [- Delete() -]
-        public async Task<IResponse<Person>> Delete(Person model)
+        public async Task<IResponse<Person>> Delete(Guid id)
         {try
             {
-                var DeleteRecord = await _dbContext.Person.FindAsync(model.Id);
+                var DeleteRecord = await _dbContext.Person.FindAsync(id);
                 if (DeleteRecord == null) 
                 {
                     return new Response<Person>(false, HttpStatusCode.NotFound, "Person not found", null);
 
                 }
-                if (model is null)
+                if (DeleteRecord is null)
                 {
                     return new Response<Person>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
                 }
-                _dbContext.Person.Remove(model);
+                _dbContext.Person.Remove(DeleteRecord);
                 await _dbContext.SaveChangesAsync();
-                var response = new Response<Person>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, model);
+                var response = new Response<Person>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, DeleteRecord);
                 return response;
             }
             catch (Exception)
