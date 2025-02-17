@@ -318,7 +318,7 @@ function ConfirmDelete(button) {
     console.log(button.id);
     idRowForDelete = button.id;
     console.log(idRowForDelete);
-    /*PassDetails(idRowForDelete);*/
+    PassDetails(idRowForDelete);
     console.log(btnDeleteConfirm);
     btnDeleteConfirm.addEventListener("click", Delete);
 }
@@ -337,17 +337,25 @@ function GetDetails(button) {
 }
 
 function PassDetails(id) {
-    let firstName = document.querySelector(
-        `tr[id="${id}"] td[id="firstNameCell"]`
-    ).innerText;
-    let lastName = document.querySelector(
-        `tr[id="${id}"] td[id="lastNameCell"]`
-    ).innerText;
-    let email = document.querySelector(
-        `tr[id="${id}"] td[id="emailCell"]`
-    ).innerText;
-    confirmDeleteModalBody.innerHTML = `You are deleting :<br><strong>First Name : ${firstName}<br>Last Name : ${lastName}<br>Email : ${email}</strong><br>Are you sure ?`;
+    let firstName, lastName, email;
+
+    try {
+        firstName = document.querySelector(`tr[id="${id}"] td[id="firstNameCell"]`).innerText;
+        lastName = document.querySelector(`tr[id="${id}"] td[id="lastNameCell"]`).innerText;
+        email = document.querySelector(`tr[id="${id}"] td[id="emailCell"]`).innerText;
+    } catch (e) {
+        console.error("Error retrieving user data", e);
+        return; // Exit if any element is missing
+    }
+
+    deleteConfirmModalBody.innerHTML = `
+        You are deleting :<br>
+        <strong>First Name : ${firstName}<br>
+        Last Name : ${lastName}<br>
+        Email : ${email}</strong><br>
+        Are you sure ?`;
 }
+
 // Show result message
 function TriggerResultMessage(message) {
     resultMessage.innerText = message;

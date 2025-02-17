@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BbfwCEpjywBH/b1MbIlga31moRjJImHgS7wWcZuC04k=",
+  "Hash": "GQDzUyfV/tfkJYLgy4DxgJYhrOOglF97zmHJ2QFYFhQ=",
   "Source": "SPADesignPattern",
   "BasePath": "_content/SPADesignPattern",
   "Mode": "Default",
@@ -794,12 +794,12 @@
       "OriginalItemSpec": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-sg32t59rlb.gz",
+      "Identity": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-bgsbu30a7j.gz",
       "SourceId": "SPADesignPattern",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/SPADesignPattern",
-      "RelativePath": "js/Person#[.{fingerprint=sg32t59rlb}]?.js.gz",
+      "RelativePath": "js/Person#[.{fingerprint=bgsbu30a7j}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -808,8 +808,8 @@
       "RelatedAsset": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "nvwgmo8cyk",
-      "Integrity": "c8C0EaJRmr1PWHIxYtN35HpvnrM5ZK5FL9etjT17E34=",
+      "Fingerprint": "yeiimjxvld",
+      "Integrity": "uv8+xARA+eQj8xWN1K/FA1emIeyV5HQX8kexz+gzi4E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js"
@@ -1480,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sg32t59rlb",
-      "Integrity": "DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI=",
+      "Fingerprint": "bgsbu30a7j",
+      "Integrity": "y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Person.js"
@@ -3366,13 +3366,13 @@
       ]
     },
     {
-      "Route": "js/Person.js",
-      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-sg32t59rlb.gz",
+      "Route": "js/Person.bgsbu30a7j.js",
+      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-bgsbu30a7j.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000383729854"
+          "Quality": "0.000376222724"
         }
       ],
       "ResponseHeaders": [
@@ -3382,19 +3382,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2605"
+          "Value": "2657"
         },
         {
           "Name": "ETag",
-          "Value": "\"c8C0EaJRmr1PWHIxYtN35HpvnrM5ZK5FL9etjT17E34=\""
+          "Value": "\"uv8+xARA+eQj8xWN1K/FA1emIeyV5HQX8kexz+gzi4E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:55:43 GMT"
+          "Value": "Mon, 17 Feb 2025 16:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3410,18 +3410,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI=\""
+          "Value": "W/\"y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "bgsbu30a7j"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Person.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI="
+          "Value": "sha256-y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk="
         }
       ]
     },
     {
-      "Route": "js/Person.js",
+      "Route": "js/Person.bgsbu30a7j.js",
       "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3431,7 +3439,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11828"
+          "Value": "12014"
         },
         {
           "Name": "Content-Type",
@@ -3439,121 +3447,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI=\""
+          "Value": "\"y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:55:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI="
-        }
-      ]
-    },
-    {
-      "Route": "js/Person.js.gz",
-      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-sg32t59rlb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2605"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"c8C0EaJRmr1PWHIxYtN35HpvnrM5ZK5FL9etjT17E34=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:55:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-c8C0EaJRmr1PWHIxYtN35HpvnrM5ZK5FL9etjT17E34="
-        }
-      ]
-    },
-    {
-      "Route": "js/Person.sg32t59rlb.js",
-      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-sg32t59rlb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000383729854"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2605"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"c8C0EaJRmr1PWHIxYtN35HpvnrM5ZK5FL9etjT17E34=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:55:43 GMT"
+          "Value": "Mon, 17 Feb 2025 16:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sg32t59rlb"
+          "Value": "bgsbu30a7j"
         },
         {
           "Name": "label",
@@ -3561,13 +3469,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI="
+          "Value": "sha256-y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk="
         }
       ]
     },
     {
-      "Route": "js/Person.sg32t59rlb.js",
-      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js",
+      "Route": "js/Person.bgsbu30a7j.js.gz",
+      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-bgsbu30a7j.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3576,7 +3484,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11828"
+          "Value": "2657"
         },
         {
           "Name": "Content-Type",
@@ -3584,56 +3492,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI=\""
+          "Value": "\"uv8+xARA+eQj8xWN1K/FA1emIeyV5HQX8kexz+gzi4E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:55:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "sg32t59rlb"
-        },
-        {
-          "Name": "label",
-          "Value": "js/Person.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DD/X9LTEI091eAMF1iom1HCgMtT5SfwNBeGwIYoLNOI="
-        }
-      ]
-    },
-    {
-      "Route": "js/Person.sg32t59rlb.js.gz",
-      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-sg32t59rlb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2605"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"c8C0EaJRmr1PWHIxYtN35HpvnrM5ZK5FL9etjT17E34=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 15:55:43 GMT"
+          "Value": "Mon, 17 Feb 2025 16:34:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3651,7 +3514,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sg32t59rlb"
+          "Value": "bgsbu30a7j"
         },
         {
           "Name": "label",
@@ -3659,7 +3522,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-c8C0EaJRmr1PWHIxYtN35HpvnrM5ZK5FL9etjT17E34="
+          "Value": "sha256-uv8+xARA+eQj8xWN1K/FA1emIeyV5HQX8kexz+gzi4E="
+        }
+      ]
+    },
+    {
+      "Route": "js/Person.js",
+      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-bgsbu30a7j.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000376222724"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2657"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uv8+xARA+eQj8xWN1K/FA1emIeyV5HQX8kexz+gzi4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 16:34:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk="
+        }
+      ]
+    },
+    {
+      "Route": "js/Person.js",
+      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 16:34:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y666o4Am5yUbyUo0XrtSOZ0go1sSli8/0ukAClv+TQk="
+        }
+      ]
+    },
+    {
+      "Route": "js/Person.js.gz",
+      "AssetFile": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\obj\\Debug\\net9.0\\compressed\\h46hm7ilvx-bgsbu30a7j.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2657"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uv8+xARA+eQj8xWN1K/FA1emIeyV5HQX8kexz+gzi4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Feb 2025 16:34:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uv8+xARA+eQj8xWN1K/FA1emIeyV5HQX8kexz+gzi4E="
         }
       ]
     },

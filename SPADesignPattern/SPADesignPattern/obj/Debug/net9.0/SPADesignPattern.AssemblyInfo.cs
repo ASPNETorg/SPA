@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPADesignPattern")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5013deac37c45606de3731d4b5b222d7bbd7027")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa0b781475708225fd783770303f65b122aed4c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPADesignPattern")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPADesignPattern")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
