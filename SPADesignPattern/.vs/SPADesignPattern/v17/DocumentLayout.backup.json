@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\t\\SPADesignPattern\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\desktop\\t\\spadesignpattern\\spadesignpattern\\wwwroot\\js\\person.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\source\\repos\\spa\\spadesignpattern\\spadesignpattern\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|solutionrelative:spadesignpattern\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\source\\repos\\spa\\spadesignpattern\\spadesignpattern\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|solutionrelative:spadesignpattern\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\source\\repos\\spa\\spadesignpattern\\spadesignpattern\\wwwroot\\js\\person.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|solutionrelative:spadesignpattern\\wwwroot\\js\\person.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\desktop\\t\\spadesignpattern\\spadesignpattern\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\source\\repos\\spa\\spadesignpattern\\spadesignpattern\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|solutionrelative:spadesignpattern\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\source\\repos\\spa\\spadesignpattern\\spadesignpattern\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|solutionrelative:spadesignpattern\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\desktop\\t\\spadesignpattern\\spadesignpattern\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|solutionrelative:spadesignpattern\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|c:\\users\\pc\\source\\repos\\spa\\spadesignpattern\\spadesignpattern\\applicationservices\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64C41CA2-7EAA-4EFF-A0E7-0AC022382388}|SPADesignPattern\\SPADesignPattern.csproj|solutionrelative:spadesignpattern\\applicationservices\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,38 +55,74 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\t\\SPADesignPattern\\SPADesignPattern\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "SPADesignPattern\\Controllers\\PersonController.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\t\\SPADesignPattern\\SPADesignPattern\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "SPADesignPattern\\Controllers\\PersonController.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAgwDIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T14:47:41.253Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SPADesignPattern\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SPADesignPattern\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T11:27:59.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\t\\SPADesignPattern\\SPADesignPattern\\Views\\Person\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SPADesignPattern\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SPADesignPattern\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-13T11:27:54.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\ApplicationServices\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "SPADesignPattern\\ApplicationServices\\Services\\PersonService.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\ApplicationServices\\Services\\PersonService.cs",
+              "RelativeToolTip": "SPADesignPattern\\ApplicationServices\\Services\\PersonService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAApwJUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T19:29:05.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "SPADesignPattern\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "SPADesignPattern\\Controllers\\PersonController.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAYwJkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T19:04:23.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\Views\\Person\\Index.cshtml",
               "RelativeDocumentMoniker": "SPADesignPattern\\Views\\Person\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\t\\SPADesignPattern\\SPADesignPattern\\Views\\Person\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\Views\\Person\\Index.cshtml",
               "RelativeToolTip": "SPADesignPattern\\Views\\Person\\Index.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEQAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-04T19:42:50.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Person.js",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\t\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js",
               "RelativeDocumentMoniker": "SPADesignPattern\\wwwroot\\js\\Person.js",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\t\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\SPA\\SPADesignPattern\\SPADesignPattern\\wwwroot\\js\\Person.js",
               "RelativeToolTip": "SPADesignPattern\\wwwroot\\js\\Person.js",
-              "ViewState": "AgIAAFkBAAAAAAAAAAAswGEAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-02-02T15:04:21.756Z",
               "EditorCaption": ""

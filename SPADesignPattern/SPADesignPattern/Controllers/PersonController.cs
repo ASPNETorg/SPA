@@ -106,24 +106,70 @@ namespace SinglePage.Sample01.Controllers
         }
         #endregion
 
-        #region [- Delete() -]
-        [HttpPost("Person/Delete")]
+        //#region [- Delete() -]
+        //[HttpPost("Person/Delete")]
 
+        //public async Task<IActionResult> Delete([FromBody] DeletePersonServiceDto dto)
+        //{
+        //    Guard_PersonService();
+        //    var deleteResponse = await _personService.Delete(dto);
+        //    return deleteResponse.IsSuccessful ? Ok() : BadRequest();
+        //}
+        //#endregion
+
+        //#region [- DeleteSelected() -]
+        //[HttpPost("DeleteSelected")]
+        //public async Task<IActionResult> DeleteSelected([FromBody] DeletePersonServiceDto dto)
+        //{
+        //    Guard_PersonService();
+        //    var result = await _personService.Delete(dto);
+        //    return result.IsSuccessful ? Ok() : BadRequest();
+        //} 
+        //#endregion
+
+        #region [- Delete() -]
+        [HttpPost]
         public async Task<IActionResult> Delete([FromBody] DeletePersonServiceDto dto)
         {
             Guard_PersonService();
+
+            if (dto == null || dto.DeletePersonDtosList == null || !dto.DeletePersonDtosList.Any())
+            {
+                return BadRequest("Invalid request: No person IDs provided.");
+            }
+
             var deleteResponse = await _personService.Delete(dto);
-            return deleteResponse.IsSuccessful ? Ok() : BadRequest();
+
+            if (deleteResponse.IsSuccessful)
+            {
+                return Ok(new { message = "Person deleted successfully." });
+            }
+
+            return BadRequest(new { message = deleteResponse.Message ?? "Failed to delete person." });
         }
         #endregion
 
-        [HttpPost("DeleteSelected")]
+        #region [- DeleteSelected() -]
+        [HttpPost]
         public async Task<IActionResult> DeleteSelected([FromBody] DeletePersonServiceDto dto)
         {
             Guard_PersonService();
+
+            if (dto == null || dto.DeletePersonDtosList == null || !dto.DeletePersonDtosList.Any())
+            {
+                return BadRequest("Invalid request: No person IDs provided.");
+            }
+
             var result = await _personService.Delete(dto);
-            return result.IsSuccessful ? Ok() : BadRequest();
+
+            if (result.IsSuccessful)
+            {
+                return Ok(new { message = "Selected persons deleted successfully." });
+            }
+
+            return BadRequest(new { message = result.Message ?? "Failed to delete selected persons." });
         }
+        #endregion
 
         #region [- PersonServiceGuard() -]
         private ObjectResult Guard_PersonService()

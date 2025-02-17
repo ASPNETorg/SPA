@@ -186,38 +186,8 @@ async function Delete() {
     }
 }
 
-// Delete selected persons
-//async function DeleteSelected() {
-//    if (selectedRows.length === 0) {
-//        TriggerResultMessage("No rows selected");
-//        return;
-//    }
+// Delete selected person
 
-//    const deleteSelectedDto = {
-//        DeletePersonDtosList: selectedRows.map((id) => ({ Id: id })),
-//    };
-
-//    try {
-//        const response = await fetch("http://localhost:5009/Person/DeleteSelected", {
-//            method: "POST",
-//            headers: {
-//                "Content-Type": "application/json",
-//                Accept: "*/*",
-//            },
-//            body: JSON.stringify(deleteSelectedDto),
-//        });
-
-//        if (response.ok) {
-//            TriggerResultMessage("Operation Successful");
-//            LoadData();
-//        } else {
-//            TriggerResultMessage("Operation Failed");
-//        }
-//    } catch (error) {
-//        console.error("Error deleting selected persons:", error);
-//        TriggerResultMessage("Operation Failed");
-//    }
-//}
 async function DeleteSelected() {
     if (selectedRows.length === 0) {
         TriggerResultMessage("No rows selected");
@@ -238,19 +208,48 @@ async function DeleteSelected() {
             body: JSON.stringify(deleteSelectedDto),
         });
 
-        if (!response.ok) {
-            throw new Error(`Server returned ${response.status}: ${response.statusText}`);
+        if (response.ok) {
+            TriggerResultMessage("Operation Successful");
+            LoadData();
+        } else {
+            TriggerResultMessage("Operation Failed");
         }
-
-        const data = await response.json();
-        console.log("DeleteSelected response:", data);
-        TriggerResultMessage("Operation Successful");
-        LoadData(); // Refresh the table after deletion
     } catch (error) {
         console.error("Error deleting selected persons:", error);
         TriggerResultMessage("Operation Failed");
     }
 }
+
+
+//async function Delete() {
+//    const id = idInDeleteConfirmModal.value;
+//    if (!id) {
+//        TriggerResultMessage("Invalid ID");
+//        return;
+//    }
+
+//    try {
+//        const response = await fetch(`${process.env.API_BASE_URL}/Person/Delete`, {
+//            method: "DELETE", // Use DELETE method
+//            headers: {
+//                "Content-Type": "application/json",
+//                Accept: "*/*",
+//            },
+//            body: JSON.stringify({ Id: id }),
+//        });
+
+//        if (response.ok) {
+//            TriggerResultMessage("Operation Successful");
+//            LoadData(); // Reload data after successful deletion
+//        } else {
+//            const errorData = await response.json(); // Parse error response if available
+//            TriggerResultMessage(`Operation Failed: ${errorData.message || "Unknown error"}`);
+//        }
+//    } catch (error) {
+//        console.error("Error deleting person:", error);
+//        TriggerResultMessage("Operation Failed: Network or server error");
+//    }
+//}
 
 // Select/Deselect all rows
 function SelectDeselectAll() {
@@ -362,43 +361,104 @@ function ValidateFormData() {
 }
 
 // Confirm delete action
-function ConfirmDelete(event) {
-    let clickedButton = event.relatedTarget;
-    console.log(clickedButton.parentNode.parentNode.id);
+//function ConfirmDelete(event) {
+//    let clickedButton = event.relatedTarget;
+//    console.log(clickedButton.parentNode.parentNode.id);
 
-    if (clickedButton.value == "Delete") {
-        let id = clickedButton.parentNode.parentNode.id;
-        idInDeleteConfirmModal.value = id;
+//    if (clickedButton.value == "Delete") {
+//        let id = clickedButton.parentNode.parentNode.id;
+//        idInDeleteConfirmModal.value = id;
 
-        //PassDetailsToDeleteConfirm(id);
-        console.log(btnDeleteConfirm);
-        btnDeleteConfirm.addEventListener("click", Delete);
-        //btnDeleteConfirm.onclick = Delete;
-    } else {
-        if (selectedRows.length == 1)
-            PassDetails(selectedRows[0]);
-        else
-            deleteConfirmModalBody.innerHTML = `Your are deleting <strong>${selectedRows.length} records</strong> , Are you sure ? `;
+//        //PassDetailsToDeleteConfirm(id);
+//        console.log(btnDeleteConfirm);
+//        btnDeleteConfirm.addEventListener("click", Delete);
+//        //btnDeleteConfirm.onclick = Delete;
+//    } else {
+//        if (selectedRows.length == 1)
+//            PassDetails(selectedRows[0]);
+//        else
+//            deleteConfirmModalBody.innerHTML = `Your are deleting <strong>${selectedRows.length} records</strong> , Are you sure ? `;
 
-        btnDeleteConfirm.addEventListener("click", DeleteSelected);
-    }
+//        btnDeleteConfirm.addEventListener("click", DeleteSelected);
+//    }
+//}
+
+function ConfirmDelete(button) {
+    //const clickedButton = button.relatedTarget;
+    //const recordId = clickedButton.parentNode.parentNode.id;
+
+    //// Clear previous modal content
+    //deleteConfirmModalBody.innerHTML = '';
+
+    //if (clickedButton.value === "Delete") {
+    //    // Single deletion
+    //    idInDeleteConfirmModal.value = recordId;
+
+    //    // Remove any existing event listeners to prevent multiple calls
+    //    btnDeleteConfirm.removeEventListener("click", Delete);
+    //    btnDeleteConfirm.addEventListener("click", Delete);
+    //} else {
+    //    // Multiple deletion
+    //    if (selectedRows.length === 1) {
+    //        PassDetails(selectedRows[0]);
+    //    } else {
+    //        deleteConfirmModalBody.innerHTML = `You are deleting <strong>${selectedRows.length} records</strong>. Are you sure?`;
+    //    }
+
+    //    // Remove any existing event listeners to prevent multiple calls
+    //    btnDeleteConfirm.removeEventListener("click", DeleteSelected);
+    //    btnDeleteConfirm.addEventListener("click", DeleteSelected);
+    //}
+    console.clear();
+    console.log(button);
+    console.log(button.id);
+    idRowForDelete = button.id;
+    console.log(idRowForDelete);
+    /*PassDetails(idRowForDelete);*/
+    console.log(btnDeleteConfirm);
+    btnDeleteConfirm.addEventListener("click", Delete);
 }
+function GetDetails(button) {
+    console.log(button.id);
+    let id = button.id;
+    console.log(id);
+    fetch(`http://Localhost:5268/Person/Get?id=${id}`)
+        .then((res) => res.json())
+        .then((json) => {
+            let inModalUl = document.querySelectorAll(".card li");
+            inModalUl[0].innerText = `First Name : ${json.firstName}`;
+            inModalUl[1].innerText = `Last Name : ${json.lastName}`;
+            inModalUl[2].innerText = `Email : ${json.email}`;
+        });
+}
+//function PassDetails(id) {
+//    const firstNameElement = document.querySelector(`tr[id="${id}"] td[id="firstName"]`);
+//    const lastNameElement = document.querySelector(`tr[id="${id}"] td[id="lastName"]`);
+//    const emailElement = document.querySelector(`tr[id="${id}"] td[id="email"]`);
+
+//    if (!firstNameElement || !lastNameElement || !emailElement) {
+//        console.error("One or more elements not found for ID:", id);
+//        return; // Exit the function if any element is not found
+//    }
+
+//    let firstName = firstNameElement.innerText;
+//    let lastName = lastNameElement.innerText;
+//    let email = emailElement.innerText;
+
+//    deleteConfirmModalBody.innerHTML = `You are deleting :<br><strong>First Name : ${firstName}<br>Last Name : ${lastName}<br>Email : ${email}</strong><br>Are you sure ?`;
+//}
 
 function PassDetails(id) {
-    const firstNameElement = document.querySelector(`tr[id="${id}"] td[id="firstName"]`);
-    const lastNameElement = document.querySelector(`tr[id="${id}"] td[id="lastName"]`);
-    const emailElement = document.querySelector(`tr[id="${id}"] td[id="email"]`);
-
-    if (!firstNameElement || !lastNameElement || !emailElement) {
-        console.error("One or more elements not found for ID:", id);
-        return; // Exit the function if any element is not found
-    }
-
-    let firstName = firstNameElement.innerText;
-    let lastName = lastNameElement.innerText;
-    let email = emailElement.innerText;
-
-    deleteConfirmModalBody.innerHTML = `You are deleting :<br><strong>First Name : ${firstName}<br>Last Name : ${lastName}<br>Email : ${email}</strong><br>Are you sure ?`;
+    let firstName = document.querySelector(
+        `tr[id="${id}"] td[id="firstNameCell"]`
+    ).innerText;
+    let lastName = document.querySelector(
+        `tr[id="${id}"] td[id="lastNameCell"]`
+    ).innerText;
+    let email = document.querySelector(
+        `tr[id="${id}"] td[id="emailCell"]`
+    ).innerText;
+    confirmDeleteModalBody.innerHTML = `You are deleting :<br><strong>First Name : ${firstName}<br>Last Name : ${lastName}<br>Email : ${email}</strong><br>Are you sure ?`;
 }
 // Show result message
 function TriggerResultMessage(message) {
